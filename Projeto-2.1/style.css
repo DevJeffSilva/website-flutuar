@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    text-align: center;
+    /*padding-top: 65px;*/
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /*background: #3586ff;*/
+    overflow: hidden;
+}
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./images/wave.png);
+    background-size: 1000px 100px; /*importante não esquecer do background-size*/
+}
+section .wave.w-0
+{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.w-1
+{
+    animation: animate1 20s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: 5s;
+    bottom: 10px;
+}
+section .wave.w-2
+{
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.w-3
+{
+    animation: animate3 10s linear infinite;
+    z-index: 997;
+    opacity: 0.2;
+    animation-delay: -1s;
+    bottom: 20px;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+
+}
+@keyframes animate1
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+
+}
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+
+}
+@keyframes animate3
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    padding-bottom: 32px;
+    margin-top: 65px;
+}
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #3F3D56;
+    
+}
+h1 span{
+    color: #EE24FF;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+p{
+    
+    width: 540px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #828282;
+
+}
+.paragrafos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 65px;
+}
+strong{
+    color: #3F3D56;
+}
+.linha{
+    border: 1px solid #ECEFF2;
+    width: 391px;
+    margin-left: 74px;
+    margin-bottom: 16px;
+}
+footer{
+    display: flex;
+    gap:  47px;
+    justify-content: center;
+    
+    
+}
+footer a{
+    color:#3F3D56;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px;
+}
+footer a:hover{
+    font-weight: bold;
+}
